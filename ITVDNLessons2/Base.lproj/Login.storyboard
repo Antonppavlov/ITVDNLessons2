@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ls5-dX-EO9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Cux-ZX-MHQ">
+            <objects>
+                <viewController id="Ls5-dX-EO9" customClass="LoginViewController" customModule="ITVDNLessons2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YRQ-zK-qAj"/>
+                        <viewControllerLayoutGuide type="bottom" id="RBF-3E-pug"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Aco-Rp-77a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqu-GI-CCl">
+                                <rect key="frame" x="164" y="178" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Twiter"/>
+                                <connections>
+                                    <action selector="loginTapped:" destination="Ls5-dX-EO9" eventType="touchUpInside" id="t6L-IF-bxT"/>
+                                    <action selector="twiterLoginTapped:" destination="Ls5-dX-EO9" eventType="touchUpInside" id="GlP-hR-OaJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIc-59-gfu">
+                                <rect key="frame" x="164" y="246" width="93" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Facebook"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonFacebook" destination="yIc-59-gfu" id="17M-cE-xqi"/>
+                        <outlet property="buttonTwiter" destination="Nqu-GI-CCl" id="rC3-Aa-HPh"/>
+                        <outlet property="facebookLoginTapped" destination="yIc-59-gfu" id="EEL-eV-yyR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R6K-oP-KxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1834.4000000000001" y="-808.24587706146929"/>
+        </scene>
+    </scenes>
+</document>
